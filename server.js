@@ -11,11 +11,9 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', function(req, res) {
-    // res.render('index', {
-    //     title: 'Site on NodeJSs'
-    // });
-
-    res.send('hello world')
+    res.render('index', {
+        title: 'Site on NodeJSs'
+    });
 });
 
 
